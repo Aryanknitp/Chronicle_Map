@@ -4,12 +4,12 @@
 
 ChronicleMap is a community-driven digital platform designed to preserve, explore, and share local history through interactive maps and timelines. It enables users to upload historical photos, documents, and oral recordings and connect them to real-world locations, creating a rich, layered archive of community heritage.
 
-![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/083992dad7738fbec3a1f98b9c50ed91cebc2e71/Screenshot%202026-02-14%20232244.png)
+![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/0399e574e55a14e2a22b1993b678a46013330a7c/Landing%20_Page)
 ## 📌 Problem Statement
 
 Local history is often lost due to migration, deterioration of physical materials, and lack of centralized digital archives. Many valuable photographs, letters, documents, and oral stories remain scattered or forgotten. ChronicleMap solves this problem by enabling rapid digital preservation and geographic storytelling powered by community contributions.
+![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/083992dad7738fbec3a1f98b9c50ed91cebc2e71/Screenshot%202026-02-14%20232244.png)
 
-![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/0399e574e55a14e2a22b1993b678a46013330a7c/Landing%20_Page)
 ## 🎯 Project Objectives
 
 - Digitally preserve local and community history  
@@ -19,7 +19,8 @@ Local history is often lost due to migration, deterioration of physical material
 - Provide educational tools for place-based learning  
 
 ## 🚀 Key Features
-
+![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/cd2d644412b66ff61fc1b4e287d206a7d9df1cdc/Screenshot%202026-02-14%20232314.png)
+![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/cd2d644412b66ff61fc1b4e287d206a7d9df1cdc/Screenshot%202026-02-14%20232336.png)
 - Authentication-first user flow  
 - Role-based access control (User, Historian, Admin)  
 - Interactive map-based history exploration  
@@ -113,4 +114,5 @@ This project is intended for educational and research purposes.
 ## ✨ Project Status
 
 🚧 Active Development
+
 
