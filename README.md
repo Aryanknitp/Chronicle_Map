@@ -48,7 +48,7 @@ Local history is often lost due to migration, deterioration of physical material
 - **User Profile Module** – Manage contributions and account  
 
 ## 🛠️ Tech Stack
-
+![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/3bbb122763bd1f415417691b02087d2d3ff9c657/Contribution%20page)
 ### Frontend
 - React (JavaScript only, no TypeScript)
 - React Router
@@ -114,6 +114,7 @@ This project is intended for educational and research purposes.
 ## ✨ Project Status
 
 🚧 Active Development
+
 
 
 
