@@ -30,7 +30,7 @@ Local history is often lost due to migration, deterioration of physical material
 - Curated historical collections  
 - Responsive, modern UI  
 
-![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/0399e574e55a14e2a22b1993b678a46013330a7c/Contribution%20page)
+
 ## 👥 Target Users
 
 - Local Historians & Preservationists  
@@ -63,7 +63,7 @@ Local history is often lost due to migration, deterioration of physical material
 - Multer + Cloudinary (Media storage)
 
 
-![image alt]()
+
 ## 🏗️ System Architecture
 
 - **Client:** React Single Page Application  
@@ -114,6 +114,7 @@ This project is intended for educational and research purposes.
 ## ✨ Project Status
 
 🚧 Active Development
+
 
 
 
