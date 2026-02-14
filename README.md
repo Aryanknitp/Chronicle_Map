@@ -1,65 +1,123 @@
- **Project Description** ---
+# 🌍 ChronicleMap
 
-ChronicleMap is a community-driven digital platform that helps preserve local history by allowing users to upload historical photographs, documents, and oral recordings and link them to real-world geographic locations. By combining crowdsourced archives with interactive maps and timelines, ChronicleMap enables people to explore history spatially and chronologically.
+### Preserving Local History, One Place at a Time
 
-The platform addresses the loss of community history caused by migration, record degradation, and institutional gaps, enabling rapid digital preservation of endangered historical materials.
+ChronicleMap is a community-driven digital platform designed to preserve, explore, and share local history through interactive maps and timelines. It enables users to upload historical photos, documents, and oral recordings and connect them to real-world locations, creating a rich, layered archive of community heritage.
 
-**Project Objectives** ---
+## 📌 Problem Statement
 
-Preserve community and local history digitally
+Local history is often lost due to migration, deterioration of physical materials, and lack of centralized digital archives. Many valuable photographs, letters, documents, and oral stories remain scattered or forgotten. ChronicleMap solves this problem by enabling rapid digital preservation and geographic storytelling powered by community contributions.
 
-Enable map-based historical exploration
+## 🎯 Project Objectives
 
-Support multimedia archival (images, documents, audio)
+- Digitally preserve local and community history  
+- Enable geographic exploration of historical records  
+- Support multimedia archival (images, documents, audio)  
+- Encourage crowdsourced contributions with verification  
+- Provide educational tools for place-based learning  
 
-Encourage community participation and verification
+## 🚀 Key Features
 
-Provide educational tools for place-based learning
-** Target Users ** ---
+- Authentication-first user flow  
+- Role-based access control (User, Historian, Admin)  
+- Interactive map-based history exploration  
+- Timeline-based chronological browsing  
+- Multimedia uploads with metadata  
+- Community verification and moderation  
+- Curated historical collections  
+- Responsive, modern UI  
 
-Local Historians & Preservationists
+## 👥 Target Users
 
-Community Residents & Visitors
+- Local Historians & Preservationists  
+- Community Residents & Visitors  
+- Educators & Students  
+- Cultural and Heritage Organizations  
 
-Educators & Students
+## 🧩 Platform Modules
 
-Cultural Heritage Organizations
+- **Authentication Module** – Login, Signup, Role Management  
+- **Map Exploration Module** – Location-based history browsing  
+- **Timeline Module** – Chronological historical exploration  
+- **Contribution Module** – Upload and preserve historical content  
+- **Collections Module** – Curated thematic archives  
+- **User Profile Module** – Manage contributions and account  
 
-** Key Features ** ----
+## 🛠️ Tech Stack
 
-Authentication-first user flow
+### Frontend
+- React (JavaScript only, no TypeScript)
+- React Router
+- Leaflet (Interactive maps)
+- CSS / Tailwind CSS
 
-Role-based access (User, Historian, Admin)
+### Backend
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- JWT Authentication
+- Multer + Cloudinary (Media storage)
 
-Interactive map-based exploration
+## 🏗️ System Architecture
 
-Timeline-based historical browsing
+- **Client:** React Single Page Application  
+- **Server:** RESTful API using Express.js  
+- **Database:** MongoDB (NoSQL)  
+- **Media Storage:** Cloudinary / S3  
+- **Authentication:** JWT-based with role permissions
 
-Multimedia uploads with metadata
+## 🔐 Authentication & Authorization
 
-Community verification & moderation
+- Secure login and registration
+- JWT token-based authentication
+- Role-based access:
+  - **User:** Upload and explore content  
+  - **Historian:** Verify and annotate submissions  
+  - **Admin:** Full system access  
 
-Curated collections by theme or era
+## 🗺️ Core Functionalities by Page
 
-** Tech Stack ** ---
-Frontend
+- **Auth Pages:** Login, Signup, Password Recovery  
+- **Home:** Platform overview and navigation  
+- **Explore Map:** Discover history by location  
+- **Location Detail:** Deep dive into a specific place  
+- **Collections:** Curated historical archives  
+- **Timeline:** Explore events by year and era  
+- **Contribute:** Upload historical materials  
+- **Profile:** Manage user data and contributions  
 
-React (JavaScript only)
+## 📱 Responsiveness
 
-React Router
+- Mobile-first design
+- Interactive bottom sheets for map views
+- Collapsible navigation for smaller screens
 
-Leaflet (for maps)
+## 📈 Use Cases
 
-CSS / Tailwind CSS
+- Exploring neighborhood history geographically  
+- Preserving personal and family historical records  
+- Teaching history through place-based learning  
+- Community-driven cultural preservation  
 
-Backend
+## 🎓 Academic & Community Context
 
-Node.js
+ChronicleMap is developed as an educational and community-focused project to promote digital heritage preservation and local history awareness.
 
-Express.js
+## 📄 License
 
-MongoDB + Mongoose
+This project is intended for educational and research purposes.
 
-JWT Authentication
+## ✨ Project Status
 
-Multer + Cloudinary (Media uploads)
+🚧 Active Development
+
+## 🙌 Acknowledgements
+
+Web & Coding Club, NIT Patna  
+Community contributors and historians  
+
+---
+
+## 📬 Contact
+
+For questions, contributions, or collaboration, feel free to reach out.
