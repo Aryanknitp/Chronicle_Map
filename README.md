@@ -20,7 +20,7 @@ Local history is often lost due to migration, deterioration of physical material
 
 ## 🚀 Key Features
 ![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/cd2d644412b66ff61fc1b4e287d206a7d9df1cdc/Screenshot%202026-02-14%20232314.png)
-![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/cd2d644412b66ff61fc1b4e287d206a7d9df1cdc/Screenshot%202026-02-14%20232336.png)
+
 - Authentication-first user flow  
 - Role-based access control (User, Historian, Admin)  
 - Interactive map-based history exploration  
@@ -114,5 +114,6 @@ This project is intended for educational and research purposes.
 ## ✨ Project Status
 
 🚧 Active Development
+
 
 
