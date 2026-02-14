@@ -4,10 +4,12 @@
 
 ChronicleMap is a community-driven digital platform designed to preserve, explore, and share local history through interactive maps and timelines. It enables users to upload historical photos, documents, and oral recordings and connect them to real-world locations, creating a rich, layered archive of community heritage.
 
+![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/083992dad7738fbec3a1f98b9c50ed91cebc2e71/Screenshot%202026-02-14%20232244.png)
 ## 📌 Problem Statement
 
 Local history is often lost due to migration, deterioration of physical materials, and lack of centralized digital archives. Many valuable photographs, letters, documents, and oral stories remain scattered or forgotten. ChronicleMap solves this problem by enabling rapid digital preservation and geographic storytelling powered by community contributions.
 
+![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/0399e574e55a14e2a22b1993b678a46013330a7c/Landing%20_Page)
 ## 🎯 Project Objectives
 
 - Digitally preserve local and community history  
@@ -27,6 +29,7 @@ Local history is often lost due to migration, deterioration of physical material
 - Curated historical collections  
 - Responsive, modern UI  
 
+![image alt](https://github.com/Aryanknitp/Chronicle_Map/blob/0399e574e55a14e2a22b1993b678a46013330a7c/Contribution%20page)
 ## 👥 Target Users
 
 - Local Historians & Preservationists  
@@ -58,12 +61,14 @@ Local history is often lost due to migration, deterioration of physical material
 - JWT Authentication
 - Multer + Cloudinary (Media storage)
 
+
+![image alt]()
 ## 🏗️ System Architecture
 
 - **Client:** React Single Page Application  
 - **Server:** RESTful API using Express.js  
 - **Database:** MongoDB (NoSQL)  
-- **Media Storage:** Cloudinary / S3  
+- **Media Storage:** Cloudinary 
 - **Authentication:** JWT-based with role permissions
 
 ## 🔐 Authentication & Authorization
@@ -71,8 +76,6 @@ Local history is often lost due to migration, deterioration of physical material
 - Secure login and registration
 - JWT token-based authentication
 - Role-based access:
-  - **User:** Upload and explore content  
-  - **Historian:** Verify and annotate submissions  
   - **Admin:** Full system access  
 
 ## 🗺️ Core Functionalities by Page
@@ -111,13 +114,3 @@ This project is intended for educational and research purposes.
 
 🚧 Active Development
 
-## 🙌 Acknowledgements
-
-Web & Coding Club, NIT Patna  
-Community contributors and historians  
-
----
-
-## 📬 Contact
-
-For questions, contributions, or collaboration, feel free to reach out.
