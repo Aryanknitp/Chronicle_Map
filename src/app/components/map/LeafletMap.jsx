@@ -139,7 +139,7 @@ const MapViewController = ({ center, zoom }) => {
 
 const LeafletMap = ({
   center = [25.5941, 85.1376],
-  zoom = 13,
+  zoom = 16,
   markers = [],
   onMarkerClick,
   onMapClick,

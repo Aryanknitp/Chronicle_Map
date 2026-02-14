@@ -22,7 +22,6 @@ import AboutPage from './pages/AboutPage';
 import GuidelinesPage from './pages/GuidelinesPage';
 import PrivacyPage from './pages/PrivacyPage';
 import ContactPage from './pages/ContactPage';
-
 export default function App() {
   return (
     <BrowserRouter>
@@ -50,6 +49,7 @@ export default function App() {
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/terms" element={<PrivacyPage />} />
               <Route path="/contact" element={<ContactPage />} />
+             
             </Routes>
             <Toaster />
           </UploadProvider>
