@@ -117,7 +117,7 @@ const RegisterPage = () => {
                   <Label>Full Name</Label>
                   <Input
                     name="name"
-                    placeholder="Jane Doe"
+                    placeholder="Jane Do"
                     value={formData.name}
                     onChange={handleChange}
                     required

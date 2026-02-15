@@ -50,55 +50,56 @@ export const AuthProvider = ({ children }) => {
   // =========================================================
   // 2. Login
   // =========================================================
-  const login = async (email, password) => {
-    try {
-      const response = await authService.login(email, password);
-      
-      console.log("Login Response:", response.data); // Debugging
+const login = async (email, password, role) => {
+  try {
+    const response = await authService.login(email, password, role);
 
-      // Handle generic backend token/user keys
-      const token = response.data.token || response.data.accessToken;
-      const userData = response.data.user || response.data.data;
+    console.log("Login Response:", response.data);
 
-      if (!token) throw new Error("Server did not return a token");
+    const token = response.data.token || response.data.accessToken;
+    const userData = response.data.user || response.data.data;
 
-      // SAVE TOKEN: The axios interceptor in api.js will pick this up automatically for next requests
-      localStorage.setItem("token", token);
-      
-      setUser(userData);
-      return { success: true };
-    } catch (error) {
-      console.error("Login failed:", error);
-      return {
-        success: false,
-        error: error.response?.data?.message || "Login failed",
-      };
-    }
-  };
+    if (!token) throw new Error("Server did not return a token");
+
+    localStorage.setItem("token", token);
+    setUser(userData);
+
+    return { success: true };
+  } catch (error) {
+    console.error("Login failed:", error);
+    return {
+      success: false,
+      error: error.response?.data?.message || "Login failed",
+    };
+  }
+};
+
 
   // =========================================================
   // 3. Register
   // =========================================================
-  const register = async (name, email, password) => {
-    try {
-      const response = await authService.register(name, email, password);
-      
-      const token = response.data.token || response.data.accessToken;
-      const userData = response.data.user || response.data.data;
+ const register = async (name, email, password, role = "user") => {
+  try {
+    const response = await authService.register(name, email, password, role);
 
-      if (!token) throw new Error("Server did not return a token");
+    const token = response.data.token || response.data.accessToken;
+    const userData = response.data.user || response.data.data;
 
-      localStorage.setItem("token", token);
-      setUser(userData);
-      return { success: true };
-    } catch (error) {
-      console.error("Registration failed:", error);
-      return {
-        success: false,
-        error: error.response?.data?.message || "Registration failed",
-      };
-    }
-  };
+    if (!token) throw new Error("Server did not return a token");
+
+    localStorage.setItem("token", token);
+    setUser(userData);
+
+    return { success: true };
+  } catch (error) {
+    console.error("Registration failed:", error);
+    return {
+      success: false,
+      error: error.response?.data?.message || "Registration failed",
+    };
+  }
+};
+
 
   // =========================================================
   // 4. Logout

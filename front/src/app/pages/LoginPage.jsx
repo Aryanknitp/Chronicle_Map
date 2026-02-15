@@ -12,6 +12,14 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../components/ui/select";
+
 import { MapPin, Loader2, Clock } from "lucide-react";
 import { toast } from "sonner";
 import AuthLayout from "../layouts/AuthLayout";
@@ -19,9 +27,9 @@ import AuthLayout from "../layouts/AuthLayout";
 const LoginPage = () => {
   const navigate = useNavigate();
   const { login } = useAuth();
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [role,setRole] = useState("user")
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -29,11 +37,11 @@ const LoginPage = () => {
     setLoading(true);
 
     try {
-      const result = await login(email, password);
+      const result = await login(email, password,role);
 
       if (result.success) {
         toast.success("Welcome back!");
-        navigate("/");
+       navigate(role === "admin" ? "/admin" : "/")
       } else {
         toast.error(result.error || "Login failed");
       }
@@ -87,6 +95,26 @@ const LoginPage = () => {
                     disabled={loading}
                   />
                 </div>
+                <div className="space-y-2">
+  <Label>Login As</Label>
+
+  <Select
+    value={role}
+    onValueChange={setRole}
+    disabled={loading}
+  >
+
+
+    <SelectTrigger>
+      <SelectValue placeholder="Select role" />
+    </SelectTrigger>
+
+    <SelectContent>
+      <SelectItem value="user">User</SelectItem>
+      <SelectItem value="admin">Admin</SelectItem>
+    </SelectContent>
+  </Select>
+</div>
 
                 <div className="space-y-2">
                   <Label>Password</Label>

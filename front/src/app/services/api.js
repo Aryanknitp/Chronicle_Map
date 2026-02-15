@@ -55,9 +55,9 @@ export const locationService = {
 // =============================
 export const authService = {
   // This uses the 'api' instance, so it automatically gets 'application/json' headers
-  login: (email, password) => api.post('/auth/login', { email, password }),
+  login: (email, password,role) => api.post('/auth/login', { email, password,role }),
   
-  register: (name, email, password) => api.post('/auth/register', { name, email, password }),
+  register: (name, email, password,role ="user") => api.post('/auth/register', { name, email, password,role}),
   
   // Gets the current user (for the "Me" endpoint)
   getCurrentUser: () => api.get('/auth/me'),
