@@ -1,36 +1,40 @@
 import axios from 'axios';
 
-// Base API URL - should be configured via environment variable
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api';
+// Base API URL
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:3000/api";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
+    
   },
 });
 
-// Request interceptor for adding auth token
+// =============================
+// Request Interceptor (JWT)
+// =============================
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem("token");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
-// Response interceptor for error handling
+// =============================
+// Response Interceptor (401)
+// =============================
 api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      localStorage.removeItem('token');
-      window.location.href = '/login';
+      localStorage.removeItem("token");
+      window.location.href = "/login";
     }
     return Promise.reject(error);
   }
@@ -44,6 +48,26 @@ export const locationService = {
   delete: (id) => api.delete(`/locations/${id}`),
   getNearby: (lat, lng, radius) =>
     api.get('/locations/nearby', { params: { lat, lng, radius } }),
+};
+
+// =============================
+// Auth Service (MISSING)
+// =============================
+export const authService = {
+  // This uses the 'api' instance, so it automatically gets 'application/json' headers
+  login: (email, password) => api.post('/auth/login', { email, password }),
+  
+  register: (name, email, password) => api.post('/auth/register', { name, email, password }),
+  
+  // Gets the current user (for the "Me" endpoint)
+  getCurrentUser: () => api.get('/auth/me'),
+  
+  logout: () => {
+    // If your backend has a logout endpoint, call it here. 
+    // Otherwise, just resolving is fine since the frontend handles the token removal.
+    // return api.post('/auth/logout'); 
+    return Promise.resolve();
+  },
 };
 
 export const mediaService = {
